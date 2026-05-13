@@ -1,10 +1,12 @@
 import React, { Suspense } from "react"; // Tambahkan Suspense jika ingin lazy loading berjalan
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import "./assets/tailwind.css";
 import MainLayout from "./layouts/MainLayout";
 import AuthLayouts from "./layouts/AuthLayouts";
+import GuestLayout from "./layouts/GuestLayout";
 import Loading from "./components/Loading";
 
+const Landing = React.lazy(() => import("./pages/Landing"));
 const Dashboard = React.lazy(() => import("./pages/Dashboard"));
 const Customers = React.lazy(() => import("./pages/Customers"));
 const Orders = React.lazy(() => import("./pages/Orders"));
@@ -48,8 +50,13 @@ function App() {
           <Route path="/forgot" element={<Forgot />} />
         </Route>
 
+        <Route path="/guest" element={<GuestLayout />}>
+          <Route index element={<Landing />} />
+        </Route>
+        <Route path="/" element={<Navigate to="/guest" replace />} />
+
         <Route element={<MainLayout />}>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/customers" element={<Customers />} />
 

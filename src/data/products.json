@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Nasi Goreng Spesial Sedap",
+    "price": "Rp 35.000",
+    "description": "Nasi goreng dengan bumbu rahasia dan topping ayam crispy.",
+    "image": "https://images.unsplash.com/photo-1705088293300-8fc8c7be90e2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8TmFzaSUyMEdvcmVuZyUyMFNwZXNpYWwlMjBTZWRhcHxlbnwwfHwwfHx8MA%3D%3D"
+  },
+  {
+    "id": 2,
+    "name": "Ayam Bakar Madu",
+    "price": "Rp 42.000",
+    "description": "Ayam bakar dengan saus madu manis dan sentuhan rempah.",
+    "image": "https://media.istockphoto.com/id/1451323978/id/foto/sayap-ayam-panggang-dengan-saus-sambal-manis-di-piring-latar-belakang-hitam-tampilan-atas.webp?a=1&b=1&s=612x612&w=0&k=20&c=dqeRlJDSlhd4e9z8Q1cNOm9EsuZJmCkFV7wuqkN3UbY="
+  },
+  {
+    "id": 3,
+    "name": "Mie Ayam Jamur",
+    "price": "Rp 28.000",
+    "description": "Mie kenyal disajikan dengan kuah kaldu gurih dan topping jamur.",
+    "image": "https://media.istockphoto.com/id/2213389840/id/foto/pasta-ayam-alfredo.webp?a=1&b=1&s=612x612&w=0&k=20&c=6WZEx7d6I5q8OojufSmzH6fdhwwCYkAO-5jiaayiOhs="
+  },
+  {
+    "id": 4,
+    "name": "Sup Buntut Sedap",
+    "price": "Rp 58.000",
+    "description": "Sup buntut berkualitas dengan rempah hangat dan sayuran segar.",
+    "image": "https://images.unsplash.com/photo-1680084568170-1f6e694aa7b4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3VwJTIwYnVudHV0JTIwYXlhbXxlbnwwfHwwfHx8MA%3D%3D"
+  },
+  {
+    "id": 5,
+    "name": "Pisang Goreng Keju",
+    "price": "Rp 20.000",
+    "description": "Pisang goreng renyah dengan taburan keju leleh dan cokelat.",
+    "image": "https://media.istockphoto.com/id/2212082912/id/foto/makanan-penutup-pisang-goreng-di-atasnya-dengan-lapisan-keju-parut-dan-cokelat-gerimis-yang.webp?a=1&b=1&s=612x612&w=0&k=20&c=de-Xj8xMT4HnTprAc_9gEgaIkPJcZJgAcMwJF--9rUA="
+  }
+]

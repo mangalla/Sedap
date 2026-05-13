@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Alya Putri",
+    "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80",
+    "review": "Pesan makanan lewat Sedap sangat cepat dan mudah. Pilihan menunya lengkap dan selalu ada promo menarik!"
+  },
+  {
+    "id": 2,
+    "name": "Rian Pratama",
+    "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80",
+    "review": "Layanan pengantaran tepat waktu dan makanan sampai dalam kondisi hangat. Recommended banget!"
+  },
+  {
+    "id": 3,
+    "name": "Nadia Sari",
+    "avatar": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=80",
+    "review": "Aplikasi ini mudah dipakai, UI-nya bersih, dan saya suka rekomendasi menu favorit setiap hari."
+  },
+  {
+    "id": 4,
+    "name": "Arief Hadi",
+    "avatar": "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?auto=format&fit=crop&w=200&q=80",
+    "review": "Diskon serta promo eksklusif membuat saya sering pesan lewat Sedap. Kualitas makanannya juga konsisten."
+  },
+  {
+    "id": 5,
+    "name": "Mila Dewi",
+    "avatar": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=200&q=80",
+    "review": "Dari pemesanan sampai pengiriman berjalan lancar. Customer service cepat merespon jika ada pertanyaan."
+  }
+]
