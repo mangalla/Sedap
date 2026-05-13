@@ -1,0 +1,109 @@
+/* Mengimpor font bergaya teknologi/futuristik */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=JetBrains+Mono:wght@300;500&display=swap');
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    /* Latar belakang gelap dengan pola grid digital */
+    background-color: #000814;
+    background-image: 
+        linear-gradient(rgba(0, 242, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 242, 255, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
+    color: #e0fbfc;
+    margin: 0;
+    padding: 40px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    max-width: 550px;
+    width: 100%;
+    /* Efek kaca gelap semi-transparan */
+    background: rgba(2, 12, 27, 0.9);
+    padding: 40px;
+    border-radius: 5px; /* Sudut lebih tajam agar terasa industrial */
+    /* Glow neon biru di sekeliling kartu */
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.2), inset 0 0 15px rgba(0, 242, 255, 0.1);
+    /* Border dengan aksen warna oranye (melambangkan keberanian/Agumon) */
+    border: 2px solid #00f2ff;
+    border-left: 5px solid #ff9100; 
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dekorasi sudut digital (Cyber Detail) */
+.card::after {
+    content: 'DIGITAL MONSTER';
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 10px;
+    color: #ff9100;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #ff9100; /* Oranye Terang */
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+    text-align: center;
+    /* Efek teks membara/neon */
+    text-shadow: 0 0 10px rgba(255, 145, 0, 0.6);
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #98c1d9;
+    background: rgba(0, 242, 255, 0.03);
+    padding: 15px;
+    border-radius: 4px;
+    border-right: 2px solid rgba(0, 242, 255, 0.3);
+}
+
+hr {
+    border: none;
+    height: 4px;
+    /* Garis putus-putus ala loading bar digital */
+    background: repeating-linear-gradient(
+        90deg,
+        #00f2ff,
+        #00f2ff 10px,
+        transparent 10px,
+        transparent 20px
+    );
+    margin: 30px 0;
+}
+
+small {
+    display: block;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    text-align: right;
+    color: #00f2ff;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+/* Efek scanline halus agar terasa seperti layar monitor lama */
+body::before {
+    content: " ";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
+                linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 4px, 3px 100%;
+    pointer-events: none;
+    z-index: 10;
+}
