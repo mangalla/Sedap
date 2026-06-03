@@ -1,3 +1,4 @@
+import { MdFastfood } from "react-icons/md"; 
 import { AiOutlineUnorderedList, AiOutlineWarning } from "react-icons/ai"; // Tambah AiOutlineWarning
 import { FaUserAlt } from "react-icons/fa"; 
 import { MdSpaceDashboard, MdOutlineNoEncryption, MdReportGmailerrorred } from "react-icons/md"; // Tambah Icon Error
@@ -36,6 +37,12 @@ export default function Sidebar() {
                             <AiOutlineUnorderedList className="mr-4 text-xl"/>Orders
                         </NavLink>
                     </li>
+                    <li>
+                                <NavLink id="menu-4" to="/products" className={menuClass}>
+                                  <MdFastfood className="mr-4 text-xl" />
+                                  Products
+                                </NavLink>
+                              </li>
                     <li>
                         <NavLink id="menu-3" to="/customers" className={menuClass}>
                             <FaUserAlt className="mr-4 text-xl"/>Customers

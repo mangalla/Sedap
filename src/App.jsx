@@ -1,3 +1,4 @@
+import { MdFastfood } from "react-icons/md"; 
 import React, { Suspense } from "react"; // Tambahkan Suspense jika ingin lazy loading berjalan
 import { Navigate, Route, Routes } from "react-router-dom";
 import "./assets/tailwind.css";
@@ -11,6 +12,8 @@ const Dashboard = React.lazy(() => import("./pages/Dashboard"));
 const Customers = React.lazy(() => import("./pages/Customers"));
 const Orders = React.lazy(() => import("./pages/Orders"));
 const ErrorPage = React.lazy(() => import("./components/ErrorPage")); 
+const Products = React.lazy(() => import("./pages/Products"));
+const ProductDetail = React.lazy(() => import("./pages/ProductDetail"));
 
 const Login = React.lazy(() => import("./pages/auth/Login"));
 const Register = React.lazy(() => import("./pages/auth/Register"));
@@ -58,6 +61,8 @@ function App() {
         <Route element={<MainLayout />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/orders" element={<Orders />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/products/:id" element={<ProductDetail />} />
           <Route path="/customers" element={<Customers />} />
 
           {/* Sekarang ErrorPage sudah terdefinisi dengan benar */}
