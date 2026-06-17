@@ -4,6 +4,7 @@ import { FaUserAlt } from "react-icons/fa";
 import { MdSpaceDashboard, MdOutlineNoEncryption, MdReportGmailerrorred } from "react-icons/md"; // Tambah Icon Error
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import { GiDaisy } from "react-icons/gi"; 
 
 export default function Sidebar() {
     
@@ -48,6 +49,12 @@ export default function Sidebar() {
                             <FaUserAlt className="mr-4 text-xl"/>Customers
                         </NavLink>
                     </li>
+                    <li>
+                                <NavLink id="menu-5" to="/daysi" className={menuClass}>
+                                  <GiDaisy  className="mr-4 text-xl" />
+                                  Daysi UI
+                                </NavLink>
+                              </li>
 
                     {/* SEPARATOR UNTUK ERROR TESTING */}
                     <li className="pt-4 pb-2 px-4 text-xs font-bold text-gray-400 uppercase tracking-widest">

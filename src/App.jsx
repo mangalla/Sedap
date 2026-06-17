@@ -6,6 +6,7 @@ import MainLayout from "./layouts/MainLayout";
 import AuthLayouts from "./layouts/AuthLayouts";
 import GuestLayout from "./layouts/GuestLayout";
 import Loading from "./components/Loading";
+import DaysiUI from "./pages/DaysiUI";
 
 const Landing = React.lazy(() => import("./pages/Landing"));
 const Dashboard = React.lazy(() => import("./pages/Dashboard"));
@@ -14,6 +15,7 @@ const Orders = React.lazy(() => import("./pages/Orders"));
 const ErrorPage = React.lazy(() => import("./components/ErrorPage")); 
 const Products = React.lazy(() => import("./pages/Products"));
 const ProductDetail = React.lazy(() => import("./pages/ProductDetail"));
+
 
 const Login = React.lazy(() => import("./pages/auth/Login"));
 const Register = React.lazy(() => import("./pages/auth/Register"));
@@ -64,7 +66,7 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductDetail />} />
           <Route path="/customers" element={<Customers />} />
-
+          <Route path="/daysi" element={<DaysiUI />} />
           {/* Sekarang ErrorPage sudah terdefinisi dengan benar */}
           <Route path="/error-400" element={<ErrorPage errorCode="400" {...errorContent[400]} />} />
           <Route path="/error-401" element={<ErrorPage errorCode="401" {...errorContent[401]} />} />

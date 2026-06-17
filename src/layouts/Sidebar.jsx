@@ -1,3 +1,4 @@
+import { GiDaisy } from "react-icons/gi"; 
 import { MdFastfood } from "react-icons/md"; 
 import { AiOutlineUnorderedList, AiOutlineWarning } from "react-icons/ai"; // Tambah AiOutlineWarning
 import { FaUserAlt } from "react-icons/fa";
@@ -66,6 +67,12 @@ export default function Sidebar() {
             <NavLink id="menu-3" to="/customers" className={menuClass}>
               <FaUserAlt className="mr-4 text-xl" />
               Customers
+            </NavLink>
+          </li>
+          <li>
+            <NavLink id="menu-5" to="/daysi" className={menuClass}>
+              <GiDaisy  className="mr-4 text-xl" />
+              Daysi UI
             </NavLink>
           </li>
 
